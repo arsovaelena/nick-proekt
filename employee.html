@@ -16,11 +16,11 @@
     }
 </style>
 <body>
-<div class="container-fluid">
-    <img src="img/carousel1.jpeg" height="300" width="1600"/>
+<div class="container-fluid p-0">
+    <img src="img/carousel1.jpeg" class="w-100"/>
 
     <div>
-        <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+        <nav class="navbar navbar-expand-lg bg-primary navbar-dark">
 
             <button class="navbar-toggler" type="button" data-toggle="collapse"
                     data-target="#collapse_Navbar">
@@ -30,99 +30,138 @@
             <div class="collapse navbar-collapse" id="collapse_Navbar">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="main.html"><b>ГЛАВНА СТРАНА</b></a>
+                        <a class="nav-link text-light" href="main.html"><b>ГЛАВНА СТРАНА</b></a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><b>ЗА НАС</b></a>
+                        <a class="nav-link text-light" href="#"><b>ЗА НАС</b></a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><b>ПОМОШ</b></a>
+                        <a class="nav-link text-light" href="#"><b>ПОМОШ</b></a>
                     </li>
                 </ul>
             </div>
 
             <form class="form-inline" action="#">
-                <i>Здраво, <a href="profile.html">@employee</a></i>
-                <button><a href="login.html">ОДЈАВИ СЕ</a> </button>
+                <button class="btn btn-link btn-light"><a href="login.html">ОДЈАВИ СЕ</a> </button>
             </form>
         </nav>
     </div>
+    <br>
+    <br>
     <div class="container">
-        <h3>Маса:</h3>
-        <div class="row">
-            <input type="checkbox"><img src="img/table1.png" width="230">
-            <input type="checkbox"><img src="img/table2.png"  width="230">
-            <input type="checkbox" checked disabled><img src="img/table3.png" width="230">
-            <input type="checkbox"><img src="img/table4.png" width="230">
+        <h3><i style="font-size: 50px">МАСА:</i></h3>
+        <div class="row m-2">
+            <div class="col-3">
+                <input type="checkbox"><img src="img/table1.png" width="230">
+            </div>
+            <div class="col-3">
+                <input type="checkbox"><img src="img/table2.png"  width="230">
+            </div>
+            <div class="col-3">
+                <input type="checkbox" checked disabled><img src="img/table3.png" width="230">
+            </div>
+            <div class="col-3">
+                <input type="checkbox"><img src="img/table4.png" width="230">
+            </div>
+
         </div><br>
-        <div class="row">
-            <input type="checkbox"><img src="img/table5.png" width="230">
-            <input type="checkbox"><img src="img/table6.png"  width="230">
-            <input type="checkbox" checked disabled><img src="img/table7.png" width="230">
-            <input type="checkbox" checked disabled><img src="img/table8.png" width="230">
+        <div class="row m-2">
+            <div class="col-3">
+                <input type="checkbox"><img src="img/table5.png" width="230">
+            </div>
+            <div class="col-3">
+                <input type="checkbox"><img src="img/table6.png"  width="230">
+            </div>
+            <div class="col-3">
+                <input type="checkbox" checked disabled><img src="img/table7.png" width="230">
+            </div>
+            <div class="col-3">
+                <input type="checkbox" checked disabled><img src="img/table8.png" width="230">
+            </div>
+
         </div>
     </div><br>
     <div class="container">
         <div class="row">
-            <div class="col-lg-4">
+            <div class="col-4">
                 <b style="font-size: 50px"><i>ХРАНА</i></b>
             </div>
-            <div class="col-lg-4">
+            <div class="col-4">
                 <b style="font-size: 50px"><i>ПИЈАЛОЦИ</i></b>
             </div>
-            <div class="col-lg-4">
+            <div class="col-4">
                 <b style="font-size: 50px"><i>ДЕСЕРТИ</i></b>
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-4">
-                <input type="checkbox"><img src="img/burger.jpg" width="200" height="200">
+            <div class="col-4">
+                <input type="checkbox"><img src="img/burger.jpg" width="250" height="200">
             </div>
-            <div class="col-lg-4">
-                <input type="checkbox"><img src="img/Carrot-Juice-001.jpg" width="200" height="200">
+            <div class="col-4">
+                <input type="checkbox"><img src="img/Carrot-Juice-001.jpg" width="250" height="200">
             </div>
-            <div class="col-lg-4">
-                <input type="checkbox"><img src="img/cheesecake.jpg" width="200" height="200">
-            </div>
-        </div><br>
-        <div class="row">
-            <div class="col-lg-4">
-                <input type="checkbox"><img src="img/salad.jpg" width="200" height="200">
-            </div>
-            <div class="col-lg-4">
-                <input type="checkbox"><img src="img/cocoa.jpg" width="200" height="200">
-            </div>
-            <div class="col-lg-4">
-                <input type="checkbox"><img src="img/triple-chocolate-cake-4.jpg" width="200" height="200">
+            <div class="col-4">
+                <input type="checkbox"><img src="img/cheesecake.jpg" width="250" height="200">
             </div>
         </div><br>
         <div class="row">
-            <div class="col-lg-4">
-                <input type="checkbox"><img src="img/pizza.jpg" width="200" height="200">
+            <div class="col-4">
+                <input type="checkbox"><img src="img/salad.jpg" width="250" height="200">
             </div>
-            <div class="col-lg-4">
-                <input type="checkbox"><img src="img/coffee.jpg" width="200" height="200">
+            <div class="col-4">
+                <input type="checkbox"><img src="img/cocoa.jpg" width="250" height="200">
             </div>
-            <div class="col-lg-4">
-                <input type="checkbox"><img src="img/icecream.jpg" width="200" height="200">
+            <div class="col-4">
+                <input type="checkbox"><img src="img/triple-chocolate-cake-4.jpg" width="250" height="200">
             </div>
         </div><br>
         <div class="row">
-            <div class="col-lg-4">
-                <input type="checkbox"><img src="img/meat-fries.jpg" width="200" height="200">
+            <div class="col-4">
+                <input type="checkbox"><img src="img/pizza.jpg" width="250" height="200">
             </div>
-            <div class="col-lg-4">
-                <input type="checkbox"><img src="img/cocktail.jpg" width="200" height="200">
+            <div class="col-4">
+                <input type="checkbox"><img src="img/coffee.jpg" width="250" height="200">
             </div>
-            <div class="col-lg-4">
-                <input type="checkbox"><img src="img/cupcake.jpg" width="200" height="200">
+            <div class="col-4">
+                <input type="checkbox"><img src="img/icecream.jpg" width="250" height="200">
+            </div>
+        </div><br>
+        <div class="row">
+            <div class="col-4">
+                <input type="checkbox"><img src="img/meat-fries.jpg" width="250" height="200">
+            </div>
+            <div class="col-4">
+                <input type="checkbox"><img src="img/cocktail.jpg" width="250" height="200">
+            </div>
+            <div class="col-4">
+                <input type="checkbox"><img src="img/cupcake.jpg" width="250" height="200">
             </div>
         </div><br><br>
-        <button class="btn btn-success btn-block" style="display: inline-block">НАПРАВИ НАРАЧКА!</button>
-        <button class="btn btn-warning btn-block" style="display: inline-block">ИЗДАДИ СМЕТКА!</button>
+
+        <div class="row">
+            <div class="col text-center">
+                <button class="btn btn-success btn-inline" style="display: inline-block">НАПРАВИ НАРАЧКА</button>
+                <button class="btn btn-warning btn-inline" style="display: inline-block">ИЗДАДИ СМЕТКА</button>
+                <button class="btn btn-danger btn-inline" style="display: inline-block">ИЗБРИШИ</button>
+
+            </div>
+        </div>
     </div>
 </div>
+<br>
+<br>
+<br>
+
+<footer class="bg-light text-center text-lg-start">
+
+    <div class="text-center p-3 bg-primary text-light">
+        © 2021 Copyright:
+        <p class="text-light">Olgica Mircheva 171294, Elena Arsova 171052</p>
+    </div>
+
+</footer>
+
 </body>
 </html>
