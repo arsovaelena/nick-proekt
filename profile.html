@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Cafe Manager</title>
 </head>
 <style>
-    .barcode{
+    .profile
+    {
         display: block;
         margin-left: auto;
         margin-right: auto;
@@ -46,21 +48,29 @@
                     </li>
                 </ul>
             </div>
-            <br>
+
+            <form class="form-inline" action="#">
+                <i>Здраво, <a href="profile.html">@employee</a></i>
+                <button><a href="login.html">ОДЈАВИ СЕ</a> </button>
+            </form>
         </nav>
     </div>
-    <div class="container" style="position: center">
-        <div class="row barcode">
-            <h1>ТВОЈОТ БАРКОД ТУКА...</h1>
-        </div>
-        <div class="row">
-            <img class="barcode" src="img/barcode.jpg" width="400" height="200"/>
-        </div>
-        <div class="row">
-            <button  class="barcode btn btn-success" style="align-content: center"><a href="employee.html"><span style="font-size: large; font-weight: bold">&#8594;</span></a></button>
+    <div class="card profile" style="width: 18rem;">
+        <img class="card-img-top" src="img/emoloyee.png">
+        <div class="card-body">
+            <h5 class="card-title">Employee X</h5>
+            <p class="card-text">
+                <b><i>Денешен промет:</i></b>7200
+                <b><i>Неделен промет:</i></b>52500<br>
+                <b><i>Освоен бонус:</i></b>853
+            </p>
+           <button class="btn btn-danger"> <a href="#">Искористи бонус!</a></button><br>
+            <b><i>Моментален рејтинг:</i></b><br>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
         </div>
     </div>
-    <br>
 </div>
-</body>
-</html>
