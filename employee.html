@@ -6,6 +6,8 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link href="fonts/css/font-awesome.min.css" rel="stylesheet" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <title>Cafe Manager</title>
 </head>
 <style>
@@ -16,7 +18,9 @@
     }
 </style>
 <body>
-<div class="container-fluid p-0">
+<input style="margin-left: 40%; width: 300px" type="range" min="0" max="100" id="slider" step="1">
+
+<div class="container-fluid p-0" id="name">
     <img src="img/carousel1.jpeg" class="w-100"/>
 
     <div>
@@ -40,11 +44,14 @@
                     <li class="nav-item">
                         <a class="nav-link text-light" href="#"><b>ПОМОШ</b></a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="profile.html"><b>ПРОФИЛ</b></a>
+                    </li>
                 </ul>
             </div>
 
             <form class="form-inline" action="#">
-                <button class="btn btn-link btn-light"><a href="login.html">ОДЈАВИ СЕ</a> </button>
+                <button class="btn btn-link btn-light"><a href="login.html"><i class="fa fa-sign-out"></i> ОДЈАВИ СЕ</a> </button>
             </form>
         </nav>
     </div>
@@ -142,9 +149,9 @@
 
         <div class="row">
             <div class="col text-center">
-                <button class="btn btn-success btn-inline" style="display: inline-block">НАПРАВИ НАРАЧКА</button>
-                <button class="btn btn-warning btn-inline" style="display: inline-block">ИЗДАДИ СМЕТКА</button>
-                <button class="btn btn-danger btn-inline" style="display: inline-block">ИЗБРИШИ</button>
+                <button class="btn btn-success btn-inline" style="display: inline-block"><i class="fa fa-shopping-cart"></i> НАПРАВИ НАРАЧКА</button>
+                <button class="btn btn-warning btn-inline" style="display: inline-block"><i class="fa fa-credit-card"></i> ИЗДАДИ СМЕТКА</button>
+                <button class="btn btn-danger btn-inline" style="display: inline-block"><i class="fa fa-trash"></i> ИЗБРИШИ</button>
 
             </div>
         </div>
@@ -164,4 +171,11 @@
 </footer>
 
 </body>
+<script>
+    $('#slider').on('change',function(){
+        var val = $(this).val();
+        $('#name').css('font-size', val + 'px');
+        $('span').html(v);
+    });
+</script>
 </html>

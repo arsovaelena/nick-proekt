@@ -3,7 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link href="fonts/css/font-awesome.min.css" rel="stylesheet" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <title>Cafe Manager</title>
+
 </head>
 <style>
     .barcode{
@@ -21,7 +27,9 @@
     }
 </style>
 <body>
-<div class="container-fluid p-0">
+<div class="container-fluid p-0" id="name">
+    <input style="margin-left: 40%; width: 300px" type="range" min="0" max="100" id="slider" step="1">
+
     <img src="img/carousel1.jpeg" class="w-100"/>
     <div>
         <nav class="navbar navbar-expand-lg bg-primary navbar-dark">
@@ -44,6 +52,9 @@
                     <li class="nav-item">
                         <a class="nav-link text-light" href="#"><b>ПОМОШ</b></a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href=""><b>ПРОФИЛ</b></a>
+                    </li>
                 </ul>
             </div>
             <br>
@@ -63,7 +74,7 @@
             <img class="barcode" src="img/barcode.jpg" width="400" height="200"/>
         </div>
         <div class="row">
-            <button  class="barcode btn btn-success" style="align-content: center"><a href="employee.html"><span style="font-size: large; font-weight: bold">&#8594;</span></a></button>
+            <button  class="barcode btn btn-success" style="align-content: center"><a href="employee.html"><i class="fa fa-sign-in"></i> НАЈАВИ СЕ</a></button>
         </div>
     </div>
     <br>
@@ -84,4 +95,11 @@
 
 </footer>
 </body>
+<script>
+    $('#slider').on('change',function(){
+        var val = $(this).val();
+        $('#name').css('font-size', val + 'px');
+        $('span').html(v);
+    });
+</script>
 </html>
