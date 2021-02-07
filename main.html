@@ -19,7 +19,7 @@
 </style>
 <body>
 <input style="margin-left: 40%; width: 300px" type="range" min="0" max="100" id="slider" step="1">
-
+<br><input style="margin-left: 45%;" type="checkbox" id="changeTheme">ЦРНО-БЕЛА ТЕМА
 <div class="container-fluid p-0" id="name">
     <img src="img/carousel1.jpeg" class="w-100"/>
     <div>
@@ -168,5 +168,22 @@
         $('#name, div, b').css('font-size', val + 'px');
         $('span').html(v);
     });
+
+    $('#changeTheme').on('change', function () {
+        if($(this).is(":checked"))
+        {
+            $('div, #name, nav').css('color','black');
+            $('img').css('filter', 'grayscale(100%)');
+            $('#collapse_Navbar, nav, button').css('background-color', 'black')
+        }
+        else
+        {
+            $('div, li').css('color','gray');
+            $('#name').css('color','white');
+            $('img').css('filter', 'grayscale(0%)');
+            $('#collapse_Navbar').css('background-color', '#007bff')
+
+        }
+    })
 </script>
 </html>
