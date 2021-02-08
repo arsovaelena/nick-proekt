@@ -6,7 +6,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <link href="fonts/css/font-awesome.min.css" rel="stylesheet" rel="stylesheet">
+    <link href="fonts/css/font-awesome.min.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <title>Cafe Manager</title>
 </head>
@@ -27,8 +27,7 @@
     }
 </style>
 <body>
-<input style="margin-left: 40%; width: 300px" type="range" min="0" max="100" id="slider" step="1">
-<br><input style="margin-left: 45%;" type="checkbox" id="changeTheme">ЦРНО-БЕЛА ТЕМА
+
 
 <div class="container-fluid p-0" id="name">
     <img src="img/carousel1.jpeg" class="w-100"/>
@@ -56,9 +55,13 @@
                 </ul>
             </div>
 
-            <button class="btn btn-link btn-light"><a href="login.html">ОДЈАВИ СЕ</a> </button>
+            <button class="btn btn-link btn-light"><a href="login.html"><i class="fa fa-sign-out">ОДЈАВИ СЕ</i></a> </button>
         </nav>
     </div>
+    <br>
+
+    <input style="margin-left: 40%; width: 300px" type="range" min="0" max="100" id="slider" step="1">
+    <br><input style="margin-left: 45%;" type="checkbox" id="changeTheme">ЦРНО-БЕЛА ТЕМА
     <br>
     <br>
     <br>
@@ -87,23 +90,19 @@
             </div>
         </div>
         <div class="col-6">
-            <div class="card profile" style="width: 18rem;">
-                <img class="card-img-top" src="img/emoloyee.png">
-                <div class="card-body">
-                    <h5 class="card-title">Employee X</h5>
-                    <p class="card-text">
-                        <b><i>Денешен промет:</i></b>7200
-                        <b><i>Неделен промет:</i></b>52500<br>
-                        <b><i>Освоен бонус:</i></b>853
-                    </p>
-                    <button class="btn btn-danger"> <a href="#">Искористи бонус</a></button><br>
-                    <b><i>Моментален рејтинг:</i></b><br>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star "></span>
-                    <span class="fa fa-star"></span>
-                </div>
+            <div class="card-header w-75">
+                <p>Избери мод</p>
+            </div>
+            <div class="card-body w-75">
+                <ul>
+                    <li><button class="btn btn-link btn-light"><a href="mainDisleksija.html"><i class="fa fa-book"></i> Дислексија</a> </button></li>
+                     <br>
+                    <li><button class="btn btn-link btn-light"><a href="main.html"><i class="fa fa-eye"></i> Проблеми со вид </a> </button></li>
+                    <br>
+                    <li><button class="btn btn-link btn-light"><a href="mainIntelektualna.html"><i class="fa fa-child"></i> Интелектуална попреченост </a> </button></li>
+                    <br>
+                    <li><button class="btn btn-link btn-light"><a href="employee.html"><i class="fa fa-user"></i> Админ</a> </button></li>
+                </ul>
             </div>
         </div>
     </div>
