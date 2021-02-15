@@ -7,7 +7,58 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <link href="fonts/css/font-awesome.min.css" rel="stylesheet" rel="stylesheet">
+
+    <script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
+    <!-- Include fusion theme -->
+    <script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript">
+
+        var chartData = [{
+            "label": "A",
+            "value": "12"
+        }, {
+            "label": "B",
+            "value": "18"
+        }, {
+            "label": "C",
+            "value": "20"
+        }, {
+            "label": "D",
+            "value": "5"
+        }, {
+            "label": "E",
+            "value": "2"
+        }, {
+            "label": "F",
+            "value": "0"
+        }];
+
+        //STEP 3 - Chart Configurations
+        const chartConfig = {
+            type: 'pie2d',
+            renderAt: 'chart-container',
+            width: '600',
+            height: '400',
+            dataFormat: 'json',
+            dataSource: {
+                // Chart Configuration
+                "chart": {
+                    "caption": "ОЦЕНИ",
+                    "xAxisName": "Grade",
+                    "yAxisName": "Percentage",
+                    "theme": "fusion",
+                },
+                // Chart Data
+                "data": chartData
+            }
+        };
+        FusionCharts.ready(function(){
+            var fusioncharts = new FusionCharts(chartConfig);
+            fusioncharts.render();
+        });
+
+    </script>
     <title>Cafe Manager</title>
 </head>
 <style>
@@ -135,6 +186,8 @@
                         </tbody>
                     </table>
                 </div>
+                <div id="chart-container"></div>
+
             </div>
         </div>
     </div>
