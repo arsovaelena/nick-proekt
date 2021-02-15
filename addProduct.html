@@ -79,77 +79,50 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-4">
-                <b style="font-size: 50px"><i>ХРАНА</i></b>
-            </div>
-            <div class="col-4">
-                <b style="font-size: 50px"><i>ПИЈАЛОЦИ</i></b>
-            </div>
-            <div class="col-4">
-                <b style="font-size: 50px"><i>ДЕСЕРТИ</i></b>
+            <div class="col-md-5">
+                <form action="/items/add" method="POST">
+                    <input id="id" type="hidden" name="id">
+                    <div class="form-group">
+                        <label for="name">ИМЕ</label><button class="btn btn-light"><i class="fa fa-microphone" ></i></button>
+                        <input type="text"
+                               class="form-control"
+                               id="name"
+                               name="name"
+                               required
+                               placeholder="ВНЕСИ ИМЕ">
+                    </div>
+                    <div class="form-group">
+                        <label for="description">ОПИС</label><button class="btn btn-light"><i class="fa fa-microphone" ></i></button>
+                        <input type="text"
+                               class="form-control"
+                               id="description"
+                               name="description"
+                               placeholder="ВНЕСИ ОПИС">
+                    </div>
+                    <div class="form-group">
+                        <label for="type">ТИП</label><button class="btn btn-light"><i class="fa fa-microphone" ></i></button>
+                        <input type="text"
+                               class="form-control"
+                               name="type"
+                               id="type"
+                               placeholder="ВНЕСИ ТИП">
+                    </div>
+                    <div class="form-group">
+                        <label for="price">ЦЕНА</label><button class="btn btn-light"><i class="fa fa-microphone" ></i></button>
+                        <input type="text"
+                               class="form-control"
+                               id="price"
+                               name="price"
+                               placeholder="ВНЕСИ ЦЕНА">
+                    </div>
+                    <button id="submit" type="submit" class="btn btn-primary">ЗАЧУВАЈ</button>
+                    <a type="button" class="btn btn-primary" href="employee.html">НАЗАД</a>
+                </form>
             </div>
         </div>
-        <div class="row">
-            <div class="col-4">
-                <input type="checkbox"><img src="img/burger.jpg" width="250" height="200">
-                <p>Цена: 2$</p>
-            </div>
-            <div class="col-4">
-                <input type="checkbox"><img src="img/Carrot-Juice-001.jpg" width="250" height="200">
-                <p>Цена: 3$</p>
-            </div>
-            <div class="col-4">
-                <input type="checkbox"><img src="img/cheesecake.jpg" width="250" height="200">
-                <p>Цена: 2$</p>
-            </div>
-        </div><br>
-        <div class="row">
-            <div class="col-4">
-                <input type="checkbox"><img src="img/salad.jpg" width="250" height="200">
-                <p>Цена: 5$</p>
-            </div>
-            <div class="col-4">
-                <input type="checkbox"><img src="img/cocoa.jpg" width="250" height="200">
-                <p>Цена: 4.3$</p>
-            </div>
-            <div class="col-4">
-                <input type="checkbox"><img src="img/triple-chocolate-cake-4.jpg" width="250" height="200">
-                <p>Цена: 3.2$</p>
-            </div>
-        </div><br>
-        <div class="row">
-            <div class="col-4">
-                <input type="checkbox"><img src="img/pizza.jpg" width="250" height="200">
-                <p>Цена: 4.2$</p>
-            </div>
-            <div class="col-4">
-                <input type="checkbox"><img src="img/coffee.jpg" width="250" height="200">
-                <p>Цена: 2.4$</p>
-            </div>
-            <div class="col-4">
-                <input type="checkbox"><img src="img/icecream.jpg" width="250" height="200">
-                <p>Цена: 2$</p>
-            </div>
-        </div><br>
-        <div class="row">
-            <div class="col-4">
-                <input type="checkbox"><img src="img/meat-fries.jpg" width="250" height="200">
-                <p>Цена: 2$</p>
-            </div>
-            <div class="col-4">
-                <input type="checkbox"><img src="img/cocktail.jpg" width="250" height="200">
-                <p>Цена: 5.6$</p>
-            </div>
-            <div class="col-4">
-                <input type="checkbox"><img src="img/cupcake.jpg" width="250" height="200">
-                <p>Цена: 2$</p>
-            </div>
-        </div><br><br>
-
-
-        <br>
-        <br>
     </div>
+
+</div>
 </div>
 <br>
 <br>
@@ -163,7 +136,7 @@
 <script>
     $('#slider').on('change',function(){
         var val = $(this).val();
-        $('#name, div, b').css('font-size', val + 'px');
+        $('#name, div, b, button').css('font-size', val + 'px');
         $('span').html(v);
     });
 

@@ -30,10 +30,12 @@
 </style>
 <body>
 
+
 <div class="container-fluid p-0" id="name">
     <img src="img/carousel1.jpeg" id="banner" class="w-100"/>
+
     <div>
-        <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+        <nav class="navbar navbar-expand-lg bg-primary navbar-dark">
 
             <button class="navbar-toggler" type="button" data-toggle="collapse"
                     data-target="#collapse_Navbar">
@@ -46,11 +48,11 @@
                         <a class="nav-link text-light" href="main.html"><b>ГЛАВНА СТРАНА</b></a>
                     </li>
 
-                    <li class="nav-item ">
+                    <li class="nav-item">
                         <a class="nav-link text-light" href="#"><b>ЗА НАС</b></a>
                     </li>
 
-                    <li class="nav-item ">
+                    <li class="nav-item">
                         <a class="nav-link text-light" href="#"><b>ПОМОШ</b></a>
                     </li>
                     <li class="nav-item">
@@ -63,110 +65,100 @@
             </div>
 
             <form class="form-inline" action="#">
-                <button class="btn btn-link btn-light"><a href="login.html"><i class="fa fa-sign-in"></i> НАЈАВИ СЕ</a> </button>
+                <button class="btn btn-link btn-light"><a href="login.html"><i class="fa fa-sign-out"></i> ОДЈАВИ СЕ</a> </button>
             </form>
         </nav>
     </div>
-
     <br>
 
     <input style="margin-left: 40%; width: 300px" type="range" min="0" max="100" id="slider" step="1">
     <br><input style="margin-left: 45%;" type="checkbox" id="changeTheme">ЦРНО-БЕЛА ТЕМА
-
     <br>
     <br>
-    <br>
-
+    <style>
+        .my-custom-scrollbar {
+            position: relative;
+            height: 200px;
+            overflow: auto;
+        }
+        .table-wrapper-scroll-y {
+            display: block;
+        }
+    </style>
     <div class="container">
         <div class="row">
-            <div class="col-4">
-                <b style="font-size: 50px"><i>ХРАНА</i></b>
+            <div class="col-6">
+                <div class="card profile" style="width: 18rem;">
+                    <img class="card-img-top" src="img/meat-fries.jpg" width="200" height="200">
+                    <div class="card-body">
+                        <h5 class="card-title">Пилешки стек со помфрит</h5>
+                        <p class="card-text">
+                            <b><i>Цена:</i></b><p>250</p><br>
+                        <b><i>Опис:</i></b><p>Пилешки стек со помфрит</p><br>
+                        <b><i>Тип:</i></b><p>ГЛАВНО ЈАДЕЊЕ</p><br>
+                        </p>
+                    </div>
+                </div>
             </div>
-            <div class="col-4">
-                <b style="font-size: 50px"><i>ПИЈАЛОЦИ</i></b>
-            </div>
-            <div class="col-4">
-                <b style="font-size: 50px"><i>ДЕСЕРТИ</i></b>
+            <br><br><br>
+            <div class="col-6">
+                <form method="POST">
+                    <i><h3>ПРИТИСНИ НА ОЦЕНАТА...</h3></i>
+                    <button class="btn btn-inline btn-success">A</button>
+                    <button class="btn btn-inline btn-primary">B</button>
+                    <button class="btn btn-inline btn-warning">C</button>
+                    <button class="btn btn-inline btn-secondary">D</button>
+                    <button class="btn btn-inline btn-danger">E</button>
+                    <button class="btn btn-inline btn-dark">F</button>
+                </form>
+                <br>
+                <div class="table-wrapper-scroll-y my-custom-scrollbar">
+                    <h3>ОЦЕНИ</h3>
+                    <table class="table table-bordered table-striped mb-0">
+                        <thead>
+                        <tr>
+                            <th scope="col">Корисник</th>
+                            <th scope="col">Оцена</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Марија</td>
+                            <td><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Виолета</td>
+                            <td><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-4">
-                <input type="checkbox"><img src="img/burger.jpg" width="250" height="200">
-                <p>Цена: 2$</p>
-            </div>
-            <div class="col-4">
-                <input type="checkbox"><img src="img/Carrot-Juice-001.jpg" width="250" height="200">
-                <p>Цена: 3$</p>
-            </div>
-            <div class="col-4">
-                <input type="checkbox"><img src="img/cheesecake.jpg" width="250" height="200">
-                <p>Цена: 2$</p>
-            </div>
-        </div><br>
-        <div class="row">
-            <div class="col-4">
-                <input type="checkbox"><img src="img/salad.jpg" width="250" height="200">
-                <p>Цена: 5$</p>
-            </div>
-            <div class="col-4">
-                <input type="checkbox"><img src="img/cocoa.jpg" width="250" height="200">
-                <p>Цена: 4.3$</p>
-            </div>
-            <div class="col-4">
-                <input type="checkbox"><img src="img/triple-chocolate-cake-4.jpg" width="250" height="200">
-                <p>Цена: 3.2$</p>
-            </div>
-        </div><br>
-        <div class="row">
-            <div class="col-4">
-                <input type="checkbox"><img src="img/pizza.jpg" width="250" height="200">
-                <p>Цена: 4.2$</p>
-            </div>
-            <div class="col-4">
-                <input type="checkbox"><img src="img/coffee.jpg" width="250" height="200">
-                <p>Цена: 2.4$</p>
-            </div>
-            <div class="col-4">
-                <input type="checkbox"><img src="img/icecream.jpg" width="250" height="200">
-                <p>Цена: 2$</p>
-            </div>
-        </div><br>
-        <div class="row">
-            <div class="col-4">
-                <input type="checkbox"><img src="img/meat-fries.jpg" width="250" height="200">
-                <p>Цена: 2$</p>
-            </div>
-            <div class="col-4">
-                <input type="checkbox"><img src="img/cocktail.jpg" width="250" height="200">
-                <p>Цена: 5.6$</p>
-            </div>
-            <div class="col-4">
-                <input type="checkbox"><img src="img/cupcake.jpg" width="250" height="200">
-                <p>Цена: 2$</p>
-            </div>
-        </div><br><br>
-
-
-        <br>
-        <br>
     </div>
 </div>
 <br>
 <br>
+<br>
 
-<script type="text/javascript">
-    $('.majorpoints').click(function(){
-        $(this).find('.hider').toggle();
-    });
-</script>
+<footer class="bg-light text-center text-lg-start">
+
+    <div class="text-center p-3 bg-primary text-light">
+        © 2021 Copyright:
+        <p class="text-light">Olgica Mircheva 171294, Elena Arsova 171052</p>
+    </div>
+
+</footer>
+
 </body>
 <script>
     $('#slider').on('change',function(){
         var val = $(this).val();
-        $('#name, div, b').css('font-size', val + 'px');
+        $('#name, b, h3, button').css('font-size', val + 'px');
         $('span').html(v);
     });
-
     $('#changeTheme').on('change', function () {
         if($(this).is(":checked"))
         {

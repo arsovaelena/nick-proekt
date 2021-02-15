@@ -16,12 +16,23 @@
         background-color: transparent;
         text-decoration: none;
     }
+    img:not(#banner) {
+        padding: 50px;
+        transition: transform .2s; /* Animation */
+        width: 270px;
+        height: 270px;
+        margin: 0 auto;
+    }
+
+    img:not(#banner):hover {
+        transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    }
 </style>
 <body>
 
 
 <div class="container-fluid p-0" id="name">
-    <img src="img/carousel1.jpeg" class="w-100"/>
+    <img src="img/carousel1.jpeg" id="banner" class="w-100"/>
 
     <div>
         <nav class="navbar navbar-expand-lg bg-primary navbar-dark">
@@ -46,6 +57,9 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-light" href="profile.html"><b>ПРОФИЛ</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="specialMenu.html"><b>СПЕЦИЈАЛНО МЕНИ</b></a>
                     </li>
                 </ul>
             </div>
@@ -165,10 +179,20 @@
 
         <div class="row">
             <div class="col text-center">
-                <button class="btn btn-success btn-inline" style="display: inline-block"><i class="fa fa-shopping-cart"></i> НАПРАВИ НАРАЧКА</button>
+                <button class="btn btn-success btn-inline" style="display: inline-block"><i class="fa fa-shopping-cart"></i><a href="orders.html">НАПРАВИ НАРАЧКА</a></button>
                 <button class="btn btn-warning btn-inline" style="display: inline-block"><i class="fa fa-credit-card"></i> ИЗДАДИ СМЕТКА</button>
                 <button class="btn btn-danger btn-inline" style="display: inline-block"><i class="fa fa-trash"></i> ИЗБРИШИ</button>
 
+            </div>
+        </div>
+
+        <div class="col mb-3 mt-3 ml-lg-3">
+            <div class="row">
+                <div class="col-12">
+                    <a href="addProduct.html" class="btn btn-block btn-dark add-product-btn">
+                        НОВ ПРОДУКТ
+                    </a>
+                </div>
             </div>
         </div>
     </div>
