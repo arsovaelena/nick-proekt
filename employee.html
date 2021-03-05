@@ -122,57 +122,57 @@
         </div>
         <div class="row">
             <div class="col-4">
-                <input type="checkbox"><img src="img/burger.jpg" width="250" height="200">
+                <input type="checkbox"><img src="img/burger.jpg" onclick="mark(this)" width="250" height="200">
                 <p>Цена: 2$</p>
             </div>
             <div class="col-4">
-                <input type="checkbox"><img src="img/Carrot-Juice-001.jpg" width="250" height="200">
+                <input type="checkbox"><img src="img/Carrot-Juice-001.jpg" onclick="mark(this)" width="250" height="200">
                 <p>Цена: 3$</p>
             </div>
             <div class="col-4">
-                <input type="checkbox"><img src="img/cheesecake.jpg" width="250" height="200">
+                <input type="checkbox"><img src="img/cheesecake.jpg" onclick="mark(this)" width="250" height="200">
                 <p>Цена: 2$</p>
             </div>
         </div><br>
         <div class="row">
             <div class="col-4">
-                <input type="checkbox"><img src="img/salad.jpg" width="250" height="200">
+                <input type="checkbox"><img src="img/salad.jpg" onclick="mark(this)" width="250" height="200">
                 <p>Цена: 5$</p>
             </div>
             <div class="col-4">
-                <input type="checkbox"><img src="img/cocoa.jpg" width="250" height="200">
+                <input type="checkbox"><img src="img/cocoa.jpg" onclick="mark(this)" width="250" height="200">
                 <p>Цена: 4.3$</p>
             </div>
             <div class="col-4">
-                <input type="checkbox"><img src="img/triple-chocolate-cake-4.jpg" width="250" height="200">
+                <input type="checkbox"><img src="img/triple-chocolate-cake-4.jpg" onclick="mark(this)" width="250" height="200">
                 <p>Цена: 3.2$</p>
             </div>
         </div><br>
         <div class="row">
             <div class="col-4">
-                <input type="checkbox"><img src="img/pizza.jpg" width="250" height="200">
+                <input type="checkbox"><img src="img/pizza.jpg" onclick="mark(this)" width="250" height="200">
                 <p>Цена: 4.2$</p>
             </div>
             <div class="col-4">
-                <input type="checkbox"><img src="img/coffee.jpg" width="250" height="200">
+                <input type="checkbox"><img src="img/coffee.jpg" onclick="mark(this)" width="250" height="200">
                 <p>Цена: 2.4$</p>
             </div>
             <div class="col-4">
-                <input type="checkbox"><img src="img/icecream.jpg" width="250" height="200">
+                <input type="checkbox"><img src="img/icecream.jpg" onclick="mark(this)" width="250" height="200">
                 <p>Цена: 2$</p>
             </div>
         </div><br>
         <div class="row">
             <div class="col-4">
-                <input type="checkbox"><img src="img/meat-fries.jpg" width="250" height="200">
+                <input type="checkbox"><img src="img/meat-fries.jpg" onclick="mark(this)" width="250" height="200">
                 <p>Цена: 2$</p>
             </div>
             <div class="col-4">
-                <input type="checkbox"><img src="img/cocktail.jpg" width="250" height="200">
+                <input type="checkbox"><img src="img/cocktail.jpg" onclick="mark(this)" width="250" height="200">
                 <p>Цена: 5.6$</p>
             </div>
             <div class="col-4">
-                <input type="checkbox"><img src="img/cupcake.jpg" width="250" height="200">
+                <input type="checkbox"><img src="img/cupcake.jpg" onclick="mark(this)" width="250" height="200">
                 <p>Цена: 2$</p>
             </div>
         </div><br><br>
@@ -233,5 +233,12 @@
 
         }
     })
+
+    function mark(el) {
+        if( el.style.border === '5px solid red' )
+            el.style.border = '0px';
+        else
+            el.style.border='5px solid red';
+    }
 </script>
 </html>
